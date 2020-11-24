@@ -18,6 +18,9 @@ export class Log{
     @ApiProperty({ description:'背景图' })
     cover:String
     @Prop()
+    @ApiProperty({ description:'标题' })
+    title:String
+    @Prop()
     @ApiProperty({ description:'文字' })
     text:String
 }

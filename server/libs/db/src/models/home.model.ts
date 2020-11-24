@@ -24,4 +24,7 @@ export class Home{
     @prop()
     @ApiProperty({ description:'bilibili' })
     bilibili:string
+    @prop()
+    @ApiProperty({ description:'歌曲' })
+    song:string
 }

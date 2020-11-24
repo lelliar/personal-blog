@@ -1,0 +1,219 @@
+@media screen and (max-width:500px){
+    .link{
+        text-decoration: none;
+        color:black;
+    }
+    .logimg{
+        position: absolute;
+        left:0px;
+        border:0px;
+        top:0px;
+        width:100%;
+        height:300px;
+        z-index:-1;
+    }
+    .itemcover{
+        height:100%;
+        width:100%;
+        position:absolute;
+        top:0px;
+        left:0px;
+        z-index:-1;
+    }
+    .itemcenter{
+        display: flex;
+        width:100%;
+        height:80vh;
+        margin:0 auto;
+        margin-top:50px;
+        flex-wrap: wrap;
+    }
+    .itembox{
+        height:50px;
+        width: 70px;
+        margin-left: 50px;
+    }
+    .itemboxtop{
+        width:100%;
+        height:70px;
+    }
+    .textwatch{
+        width:auto;
+        margin-left:20px;
+        color: rgb(150, 150, 150);
+        height:50px;
+        font-size: 13px;
+        line-height: 50px;
+    }
+    .texthead{
+        display:none;
+    }
+    .textbox{
+        display: flex;
+        width:100%;
+        border:none;
+        height:70px;
+        cursor: pointer;
+        border-radius: 10px;
+        flex-direction: row;
+    }
+    .text{
+        width:1200px;
+        height:120px;
+        margin:0 auto;
+
+    }
+    
+    .texttime{
+        height:20px;
+        width:10%;
+        margin-top:10%;
+        font-size: 7px;
+        color:rgb(141, 141, 141);
+        margin-left:10px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .technologyicon{
+        color: rgb(150, 150, 150); font-size: 10px;
+    }
+    .logidtext{
+        position: absolute;
+        left:0px;
+        border:0px;
+        top:0px;
+        width:100%;
+        height:300px;
+        overflow: hidden;
+        z-index:-1;
+    }
+    .logidtitle{
+        height:20%;
+        width:20%;
+        margin-left:10%;
+        font-size: 25px;
+        margin-top:160px;
+        font-weight: bold;
+    }
+    .logidcenter{
+        width:90%;
+        margin:0 auto;
+        margin-top:10%;
+    }
+    .textdescription{
+        height:25px;
+        max-width:100%;
+        margin-top:5px;
+        overflow: hidden;
+        color:rgb(141, 141, 141);
+        text-overflow: ellipsis;
+        font-size: 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    .texttitle{
+        height:15px;
+        width:100%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .logtext{
+        height:100px;
+        width:240px;
+        text-align: center;
+        line-height: 100px;
+        font-size: 30px;
+        
+        font-weight: bold;
+        margin:0 auto;
+        margin-top:40px;
+        margin-bottom:130px;
+    }
+    .nav{
+        display: flex;
+        height:30px;
+        width:0px;
+        opacity: 0;
+        margin-top:30px;
+        margin:0 auto;
+        flex-direction: row;
+        background-color: rgba(153, 153, 153, 0.726);
+        border-radius: 10px;
+    }
+    .head{
+        display: none;
+        height:100vh;
+        width:60%;
+    }
+    .hp{
+        position: relative;
+        width:100px;
+        height:100px;
+        border-radius: 50%;
+        margin:0 auto;
+        margin-top:160px;
+    }
+    .hpimg{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.342);
+        display: none;
+        width:100px;
+        text-align: center;
+        height:100px;
+        border-radius: 50%;
+    }
+    #menu{
+        font-size:30px;
+        display:block;
+    }
+    .longen {
+        opacity: 0;
+         width: 120px;
+         height: 120px;
+         margin-left:16%;
+         margin-top:10px;
+         position: relative;
+         background-color: rgb(75, 75, 75);
+     }
+     .titdes{
+        width:60%;
+        margin-left:10px;
+    }
+     .chouti{
+        height:60px;
+        margin:0px;
+        padding:0px;
+        
+    }
+    .chouti{
+        height:60px;margin:0px;padding:0px;
+    }
+     .GirlBottom{
+        margin:0 auto;
+        width: 100%;
+        height:500px;
+        background-color: white;
+        margin-top:19vh;
+    }
+     .bodyimg{
+        position: absolute;
+        top:0px;
+        left:0px;
+        z-index:-1;
+        width:100%;
+        height:100%; 
+    }
+    .tip{
+        display: flex;
+        flex-direction: row;
+        margin-top:10%;
+        width:4rem;
+        display: none;
+        margin-left:82%;
+        cursor: pointer;
+        height:20px;
+    }
+}
+

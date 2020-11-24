@@ -9,6 +9,9 @@ import { LogModule } from './log/log.module';
 import { TechnologyModule } from './technology/technology.module';
 import { ItemModule } from './item/item.module';
 import { MulterModule } from '@nestjs/platform-express';
+import { WatchModule } from './watch/watch.module';
+import { LoveModule } from './love/love.module';
+import { NoloveModule } from './nolove/nolove.module';
 const MAO = require('multer-aliyun-oss')
 
 @Module({
@@ -30,7 +33,10 @@ const MAO = require('multer-aliyun-oss')
     MygirlModule,
     LogModule,
     TechnologyModule,
-    ItemModule
+    ItemModule,
+    WatchModule,
+    LoveModule,
+    NoloveModule
   ],
   controllers: [AppController],
   providers: [AppService],

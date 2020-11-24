@@ -42,6 +42,7 @@
                         </el-upload>
                     </div>
                 </div>
+                
                  <div class="upload">
                     <div class="text">
                         上 传 背 景 图:
@@ -58,6 +59,18 @@
                         </el-upload>
                     </div>
                 </div>
+                <el-form-item label="歌曲" style="margin-top:36%;margin-left:-600px;margin-top:-20px;">
+            <el-upload
+              class="upload-demo"
+              :action="$http.defaults.baseURL+'/upload'"
+              multiple
+              :on-success="res=>this.$set(this.data , 'song' , res.url)"
+              :limit="1" 
+              >
+              <el-button size="small" type="primary">点击上传</el-button>
+              
+            </el-upload>
+          </el-form-item>
             </div>
       </div>
     <el-button type="primary" style="margin-left:50%;width:5%;margin-top:20px;" native-type="submit">确认</el-button>
@@ -72,9 +85,9 @@ import { Vue,Component, Prop } from 'vue-property-decorator'
 export default class HomeEdit extends Vue{
     [x: string]: any
     
-   @Prop(String) id:string
+   @Prop(String) id?:string
     data={
-        
+        song:''
     }
 
     async fetch(){

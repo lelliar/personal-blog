@@ -1,7 +1,9 @@
 <template>
   <div>
        <el-form class="center" style="opacity:0.8" @submit.native.prevent="save">
-           
+           <el-form-item label="标题">
+               <input type="text" v-model="data.title">
+           </el-form-item>
            <el-form-item label="背景图：" class="percent">
                <el-upload
                     style="margin-left:100px;margin-top:30px;"

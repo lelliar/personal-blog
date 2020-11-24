@@ -34,7 +34,7 @@ export default class LogList extends Vue{
         const res = await this.$http.get('log')
         this.data = res
     }
-    async remove(row){
+    async remove(row:any){
         await this.$confirm('是否确认删除？')
         await this.$http.delete(`log/${row}`)
         this.$message.success('删除成功')

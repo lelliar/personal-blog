@@ -36,7 +36,7 @@ export default class ItemList extends Vue{
     created(){
         this.fetch()
     }
-    async remove(row){
+    async remove(row:any){
         await this.$confirm('是否确认删除？')
         await this.$http.delete(`item/${row}`)
         this.$message.success('删除成功')

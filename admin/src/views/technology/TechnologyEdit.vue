@@ -22,7 +22,11 @@ import {Vue , Component} from 'vue-property-decorator'
 @Component({})
 export default class TechnologyList extends Vue{
     [x: string]: any
-    data={}
+    data={
+        watch:0,
+        love:0,
+        comment:{}
+    }
     field={
         _id:{ label:"ID" },
         cover:{ label:'背景图' },
@@ -39,7 +43,7 @@ export default class TechnologyList extends Vue{
         const res = await this.$http.get('technology')
         this.data = res
     }
-    async remove(row){
+    async remove(row:any){
         await this.$confirm('是否确认删除？')
         await this.$http.delete(`technology/${row}`)
         this.$message.success('删除成功')

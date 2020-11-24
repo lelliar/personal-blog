@@ -8,14 +8,10 @@ export class item{
     head:string
 
     @Prop()
-    @ApiProperty({ description:'文本' })
-    text:string
-
-    @Prop()
     @ApiProperty({ description:'标题' })
     title:string
 
     @Prop()
-    @ApiProperty({ description:'背景图' })
-    cover:string
+    @ApiProperty({ description:'github地址' })
+    github:string
 }

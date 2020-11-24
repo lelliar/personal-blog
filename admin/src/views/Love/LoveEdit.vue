@@ -4,12 +4,14 @@
           <el-form-item label="百分比:" class="percent">
             <el-progress type="dashboard" :percentage="percentage" style="margin-left:120px;"></el-progress>
 <div>
+  
   <el-button-group style="margin-left:130px;">
     <el-button icon="el-icon-minus" @click="decrease"></el-button>
     <el-button icon="el-icon-plus" @click="increase"></el-button>
   </el-button-group>
 </div>
           </el-form-item>
+          
           <el-form-item label="文章" style="margin-top:20%;margin-left:-14%;">
             <Editor v-model="model.text"  style="width:800px;"></Editor>
           </el-form-item>
@@ -87,6 +89,7 @@ export default{
         this.model = res.data
         this.percentage = this.model.percentage
       },
+     
       async save(){
         if(this.id){
           const res = await this.$http.put(`mygirl/${this.id}` , this.model)

@@ -39,7 +39,7 @@ export default class Main extends Vue {
         this.data = res
     }
 
-    async remove(row){
+    async remove(row:any){
       await this.$confirm('是否确认删除？')
       await this.$http.delete(`home/${row}`)
       this.$message.success('删除成功')

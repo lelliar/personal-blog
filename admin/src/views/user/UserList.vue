@@ -32,7 +32,7 @@ export default class UserList extends Vue{
         const res = await this.$http.get('user')
         this.data = res
     }
-    async remove(row){
+    async remove(row:any){
         await this.$confirm('是否确认删除？')
         await this.$http.delete(`user/${row}`)
         this.$message.success('删除成功')

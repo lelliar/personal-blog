@@ -1,0 +1,539 @@
+
+   body{
+        margin:0px;
+        padding:0px;
+        color:white;
+        background-color: rgb(34, 34, 34);
+    }
+    
+    .head{
+        display: flex;
+        height:50px;
+        width:80%;
+        border-bottom: 2px solid rgba(153, 153, 153, 0.562);
+        margin:0 auto;
+        justify-content: space-between;
+    }
+    .bodyimg{
+        position: absolute;
+        top:0px;
+        left:0px;
+        z-index:-1;
+        width:1200px;
+        height:120vh; 
+    }
+    @media screen and (min-width:500px){
+    .chouti{
+        position: absolute;
+        z-index:-2;
+    }
+}
+    .logidcenter{
+        width:60%;
+        margin:0 auto;
+        margin-top:26%;
+    }
+    .logidtext2{
+        margin-top:-200px;
+        width:1200px;
+        height:650px;
+    }
+    .logidtext{
+        position: absolute;
+        left:0px;
+        border:0px;
+        top:0px;
+        width:1200px;
+        height:350px;
+        overflow: hidden;
+        z-index:-1;
+    }
+
+.logidloveiconfont{
+    color:black;
+    margin-left:100px;
+}
+
+
+.hp{
+    position: relative;
+    width:120px;
+    height:120px;
+    border-radius: 50%;
+    margin:0 auto;
+    margin-top:140px;
+}   
+.hpimg{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.342);
+    display: none;
+    width:120px;
+    text-align: center;
+    height:120px;
+    border-radius: 50%;
+}
+/* .hpicon{
+    position: absolute;
+    height:120px;
+    text-align: center;
+    width:120px;
+} */
+.imghead{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+    .head{
+        display: flex;
+        height:50px;
+        width:1200px;
+        margin-top:-7vh;
+        border-bottom: 2px solid rgba(153, 153, 153, 0.562);
+        justify-content: space-between;
+    }
+    .name{
+        height:50px;
+        width:20%;
+        text-align: center;
+        font-family: 宋体;
+        font-size: 1.6rem;
+        line-height: 50px;
+        font-weight: bold;
+      
+    }
+    .left{
+        display: flex;
+        height:50px;
+        width:50%;
+        flex-direction: row;
+    }
+    .box{
+        width:17%;
+        height:50px;
+        display: flex;
+        text-align: center;
+        line-height: 50px;
+        flex-direction: row;
+        
+        }
+        .link{
+            text-decoration: none;
+            color:white;
+            font-size: 1rem;
+        }
+        #menu{
+            font-size:30px;
+            display:none;
+        }
+        .all{
+            height:100%;    
+            width:100%;
+        }
+        .guodu{
+            height:30px;
+            width:120px;
+        }
+        .nav{
+            display: flex;
+            height:30px;
+            width:400px;
+            margin-top:30px;
+            margin:0 auto;
+            flex-direction: row;
+            background-color: rgba(153, 153, 153, 0.726);
+            border-radius: 10px;
+        }
+        .navbox{
+            width:20%;
+            height:30px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .ai{
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* 箭头 */
+        .longen {
+           opacity: 0;
+            width: 120px;
+            height: 120px;
+            margin-left:40%;
+            margin-top:10px;
+            position: relative;
+            background-color: #FFF;
+        }
+
+        .longen:before,
+        .longen:after {
+            content: "";
+            display: block;
+            border-width: 14px;
+            position: absolute;
+            top: -25px;
+            left: 45px;
+            border-style: dashed dashed solid;
+            border-color: transparent transparent white;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .longen:after {
+            top: -25px;
+            border-color: transparent transparent #FFF;
+        }
+        .bodyimg{
+            position: absolute;
+            top:0px;
+            left:0px;
+            z-index:-1;
+            width:100%;
+            height:100vh;
+        }
+        .logimg{
+            position: absolute;
+            left:0px;
+            border:0px;
+            top:0px;
+            width:100%;
+            height:650px;
+            z-index:-1;
+        }
+        .logimg2{
+            width:100%;
+            height:100%;
+        }
+        .index {
+            position:fixed;
+            width:80%;
+           
+            
+            margin-top:-30%;
+        }
+        
+        #stars {
+            width:100%;
+        }
+        .star {
+            display:block;
+            width:5px;
+            height:5px;
+            border-radius:50%;
+            background:#FFF;
+            position:absolute;
+            transform-origin:100% 0;
+            animation:star-ani 4s linear infinite;
+            -webkit-animation:star-ani 5s linear infinite;
+            box-shadow:0 0 5px 5px rgba(255,255,255,.3);
+            opacity:0;
+            z-index:2;
+        }
+        .star:after {
+            content:'';
+            display:block;
+            top:0px;
+            left:4px;
+            border:0px solid #fff;
+            border-width:0px 90px 2px 90px;
+            border-color:transparent transparent transparent rgba(255,255,255,.3);
+            transform:rotate(-45deg) translate3d(1px,3px,0);
+            box-shadow:0 0 1px 0 rgba(255,255,255,.1);
+            transform-origin:0% 100%;
+        }
+        .tip{
+            display: flex;
+            flex-direction: row;
+            margin-top:6%;
+            width:15rem;
+            margin-left:82%;
+            cursor: pointer;
+            height:20px;
+        }
+        .tip:hover{
+            border-bottom: 1px solid white;
+        }
+        
+        @keyframes star-ani {
+            0% {
+            opacity:0;
+            transform:scale(0) translate3d(0,0,0);
+        }
+        20% {
+            opacity:0.8;
+            transform:scale(0.3) translate3d(-100px,100px,0);
+        }
+        40% {
+            opacity:0.8;
+            transform:scale(0.5) translate3d(-200px,200px,0);
+        }
+        60% {
+            opacity:0.8;
+            transform:scale(0.7) translate3d(-300px,300px,0);
+        }
+        80% {
+            opacity:1;
+            transform:scale(0.9) translate3d(-350px,350px,0);
+        }
+        100% {
+            opacity:1;
+            transform:scale(1.1) translate3d(-400px,380px,0);
+        }
+    }
+    
+    /* log页面 */
+    .logtext{
+        height:100px;
+        width:240px;
+        
+        text-align: center;
+        line-height: 100px;
+        font-size: 40px;
+        font-weight: bold;
+        margin:0 auto;
+        margin-top:140px;
+        margin-bottom:400px;
+    }
+    .text{
+        width:1200px;
+        height:250px;
+        margin:0 auto;
+        margin-top:10px;
+    }
+    .textbox{
+        display: flex;
+        width:1100px;
+        border:none;
+        height:150px;
+       
+        margin:0 auto;
+        
+        cursor: pointer;
+        border-radius: 10px;
+        flex-direction: row;
+    }
+    .textimg{
+        height:100%;
+        width:30%;
+        border-radius: 10px;
+    }
+    .textimg2{
+        height:100%;
+        width:100%;
+        border-radius: 10px;
+       
+    }
+    .texttitle{
+        height:35px;
+        width:100%;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .textline{
+        display: flex;
+        height: 30px;
+        margin-top:10px;
+        width: 100%;
+    }
+    .textwatch{
+        width:auto;
+        margin-left:20px;
+        color: rgb(150, 150, 150);
+        height:30px;
+        font-size: 13px;
+        line-height: 30px;
+    }
+    .technologyicon{
+        color: rgb(150, 150, 150); font-size: 10px;
+    }
+    .textdescription{
+        height:25px;
+        max-width:100%;
+        overflow: hidden;
+        color:rgb(141, 141, 141);
+        text-overflow: ellipsis;
+     
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .texthead{
+        display: flex;
+        width:100%;
+        height:60px;
+        line-height: 50px;
+    }
+    .textheadimg{
+        height:30px;
+        width:32px;
+        margin-top:25px;
+        border-radius: 50%;
+    }
+    .textname{
+        height:30px;
+        width:20%;
+        color: rgb(185, 185, 185);;
+        margin-left:15px;
+        margin-top:15px;
+    }
+    .titdes{
+        width:57%;
+        margin-left:20px;
+    }
+    .texttime{
+        height:20px;
+        width:10%;
+        margin-top:10%;
+        color:rgb(141, 141, 141);
+        margin-left:10px;
+        line-height: 20px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .logidtext{
+        position: absolute;
+        left:0px;
+        border:0px;
+        top:0px;
+        width:100%;
+        height:75%;
+        overflow: hidden;
+        z-index:-1;
+    }
+    .logidtext2{
+        margin-top:-10%;
+        width:100%;
+        height:100%;
+    }
+    .logidtitle{
+        position: absolute;
+        top:50px;
+        left:230px;
+        font-size: 30px;
+        margin-top:16%;
+        font-weight: bold;
+    }
+    .GirlCover{
+        width:100%;
+        height:100%;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: -1;
+    }
+    .GirlBottom{
+        margin:0 auto;
+        width: 720px;
+        height:500px;
+        background-color: white;
+        margin-top:10vh;
+    }
+    .itemcover{
+        height:auto;
+        width:100%;
+        position:absolute;
+        top:0px;
+        left:0px;
+        z-index:-1;
+    }
+    .itemcenter{
+        display: flex;
+        width:100%;
+        height:100vh;
+        margin:0 auto;
+        margin-top:50px;
+        flex-wrap: wrap;
+    }
+    .itembox{
+        height:130px;
+        width: 130px;
+        margin-left: 270px;
+    }
+    .itemboxtop{
+        width:100%;
+        height:100%;
+    }
+    .itemboxbottom{
+        height:30px;
+        width: 100%;
+        line-height: 30px;
+        margin-top:20px;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    .Girljdt{
+        display: block;
+        margin-top:20px;
+        height:20px;
+        padding-top:20px;
+
+    }
+    .itemboximg{
+        height:100%;
+        width:100%;
+        border-radius: 50%;
+    }
+    .MyGirlLove{
+        display: flex;
+        height:40px;
+        width:90%;
+        margin:0 auto;
+        color:black;
+        margin-top:30px;
+    }
+    .MyGrilLoveicon{
+        height:100%;
+        width:7%;
+        line-height: 30px;  
+        text-align: center;
+    }
+    .MyGrilLovetext{
+        display: flex;
+        height:100%;
+        width:93%;
+    }
+    .MyGrilLovetextIcon{
+        display:inline-block;
+        width:auto;
+        padding:7px;
+        font-size: 13px;
+        font-family: 宋体;
+        height:20px;
+        font-weight: bold;
+        line-height: 8px;
+
+        margin-left: 20px;
+        align-self: center;
+        text-align: center;
+        border-radius: 10px;
+        background-color: pink;
+    }
+    
+    .MyGirlpoint{
+        height:18px;
+        width:18px;
+        border-radius: 50%;
+        align-self: center;
+        background-color: pink;
+    }
+    .MyGirlLovePointAll{
+        display: flex;
+        height:25px;
+        width:40%;
+        margin-left:5%;
+        margin-top:80px;
+    }
+    .MyGirlPointText{
+        height:100%;
+        width: 90%;
+        align-self: center;
+        margin-left:10px;
+        line-height: 25px;
+        font-family: 宋体;
+        color:black;
+    }

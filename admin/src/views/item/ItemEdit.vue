@@ -6,21 +6,9 @@
            </el-form-item>
             
            <el-form-item label="内容:"  class='sty' style="margin-left:40px;height:500px;">
-               <vue-editor style="color:black; height:400px;" v-model="data.text"></vue-editor>
+               <el-input style="width:300px;" v-model="data.github"></el-input>
            </el-form-item>
            <div style="margin-left:60%;margin-top:-43%">
-                <el-form-item label="上传背景图:"  class='sty' style="margin-left:30px;height:400px;margin-top:180px;">
-                    <el-upload
-                    style="margin-left:20px;"
-                    class="avatar-uploader"
-                    :action="$http.defaults.baseURL+'/upload'"
-                    :show-file-list="false"
-                    :on-success="res => this.$set(this.data , 'cover' , res.url)"
-                    >
-                    <img v-if="data.cover" :src="data.cover" class="avatar" style="width:400px;height:250px;">
-                    <i v-else class="el-icon-plus avatar-uploader-icon" style="width:400px;height:250px;line-height:250px;"></i>
-                </el-upload>
-                </el-form-item>
                 <el-form-item label="上传头像：" class="sty" style="margin-left:40px;">
                     <el-upload
                     style="margin-left:20px;"
